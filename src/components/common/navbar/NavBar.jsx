@@ -6,10 +6,8 @@ import { useTheme } from "../../../context/ThemeContext";
 const navItems = [
   { id: 1, name: "Home", url: "introduction" },
   { id: 2, name: "About", url: "profile" },
-  { id: 3, name: "Process", url: "work-process" },
-  { id: 4, name: "Portfolio", url: "portfolio" },
-  { id: 5, name: "Blog", url: "blog" },
-  { id: 6, name: "Services", url: "services" },
+  { id: 3, name: "Portfolio", url: "portfolio" },
+  { id: 4, name: "Contact", url: "contact" },
 ];
 
 const handleMenuClick = () => {
@@ -91,7 +89,7 @@ const NavBar = () => {
                 alt="logo"
               />
             </div>
-            <div className="flex flex-col leading-tight">
+            {/* <div className="flex flex-col leading-tight">
               <p className={`text-xl sm:text-2xl font-black tracking-tight transition-colors duration-300 ${
                 theme === "dark" ? "text-white" : "text-gray-900"
               }`}>
@@ -102,7 +100,7 @@ const NavBar = () => {
               }`}>
                 De Llamas
               </p>
-            </div>
+            </div> */}
           </Link>
         </div>
 
@@ -136,17 +134,6 @@ const NavBar = () => {
               </svg>
             )}
           </button>
-
-          {/* Contact button — desktop only */}
-          <Link
-            className="hidden lg:inline-flex btn btn-sm xs:btn-md sm:btn-lg btn-primary"
-            href="#contact"
-            to={`contact`}
-            smooth={true}
-            duration={900}
-          >
-            Contact
-          </Link>
 
           {/* Hamburger — mobile only */}
           <div className="dropdown dropdown-end lg:hidden">

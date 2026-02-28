@@ -27,7 +27,7 @@ const Introduction = () => {
       {/* Aurora decorative layer */}
       <div className="intro-aurora" />
 
-      <div className="relative z-10 flex max-lg:flex-col-reverse sm:justify-between items-center gap-16 lg:gap-24 py-24 lg:py-32 px-6 max-xxl:px-8 xxl:max-w-[1320px] xxl:mx-auto">
+      <div className="relative z-10 flex max-lg:flex-col-reverse sm:justify-between items-center gap-16 lg:gap-28 pt-14 pb-20 lg:pt-16 lg:pb-28 px-6 max-xxl:px-8 xxl:max-w-[1320px] xxl:mx-auto">
 
         {/*  LEFT: text column  */}
         <div className="w-full flex flex-col max-lg:items-center gap-7">
@@ -81,12 +81,12 @@ const Introduction = () => {
               <span>Say Hello</span>
               <span className="btn-hero-icon"></span>
             </a>
-            <a className="btn-ghost" href="/cv.pdf" download>
+            <a className="btn-ghost" href="/joshuadellamasCV.pdf" download="joshuadellamasCV.pdf">
               <span>Download CV</span>
             </a>
           </div>
 
-          {/* Divider + socials */}
+          {/* Divider + socials
           <div className="animate-fade-up delay-400 flex items-center gap-4 max-lg:justify-center">
             <span className="text-gray-600 text-[10px] tracking-[0.25em] uppercase font-medium">Follow</span>
             <div className="h-px w-8 bg-gray-800" />
@@ -95,7 +95,7 @@ const Introduction = () => {
                 {s.icon}
               </a>
             ))}
-          </div>
+          </div> */}
 
         </div>
 

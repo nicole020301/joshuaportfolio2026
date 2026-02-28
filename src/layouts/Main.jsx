@@ -10,7 +10,7 @@ const Main = () => {
       <div className="relative">
         <NavBar />
         <Outlet />
-        <div className="bg-[#2A374A]">
+        <div>
           <Footer />
         </div>
         <ScrollToTop />
