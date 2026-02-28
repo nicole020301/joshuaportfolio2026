@@ -72,23 +72,11 @@ const NavBar = () => {
             duration={900}
             className="flex items-center border-0 lg:max-xxl:ps-5 gap-3"
           >
-            <div className={`relative p-[2px] rounded-2xl transition-all duration-300 ${
-              theme === "dark"
-                ? "shadow-[0_0_14px_#7c3aed99,0_0_28px_#7c3aed44]"
-                : "shadow-[0_0_10px_#7c3aed44]"
-            }`}
-              style={{
-                background: "linear-gradient(135deg, #7c3aed, #c084fc, #000, #7c3aed)",
-                backgroundSize: "300% 300%",
-                animation: "logoBorderSpin 4s ease infinite",
-              }}
-            >
-              <img
+            <img
                 src={logo}
-                className="h-9 sm:h-13 rounded-[14px] block"
+                className={`h-9 sm:h-13 block ${theme === "dark" ? "logo-dark" : "logo-light"}`}
                 alt="logo"
               />
-            </div>
             {/* <div className="flex flex-col leading-tight">
               <p className={`text-xl sm:text-2xl font-black tracking-tight transition-colors duration-300 ${
                 theme === "dark" ? "text-white" : "text-gray-900"

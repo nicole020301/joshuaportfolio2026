@@ -89,12 +89,6 @@
   height: 6px;
   border-radius: 9999px;
   background: #22c55e;
-  animation: contactPulse 2s ease-in-out infinite;
-}
-
-@keyframes contactPulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.8); }
 }
 
 /* ── Heading ── */
@@ -272,19 +266,7 @@
 .contact-submit span { position: relative; z-index: 1; }
 .contact-submit svg  { position: relative; z-index: 1; }
 
-/* ── Fade-up animation ── */
-.contact-fade {
-  animation: contactFadeUp 0.7s ease both;
-}
-.contact-d1 { animation-delay: 0.1s; }
-.contact-d2 { animation-delay: 0.2s; }
-.contact-d3 { animation-delay: 0.3s; }
-.contact-d4 { animation-delay: 0.4s; }
 
-@keyframes contactFadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
 
 /* ════ LIGHT MODE ════ */
 :root[data-theme="light"] .contact-section {

@@ -52,7 +52,7 @@ const services = [
 
 const stats = [
   { value: "10+",  label: "Projects"        },
-  { value: "2",    label: "Internships"     },
+  { value: "1",    label: "Internships"     },
   { value: "5+",   label: "Certifications", wide: true },
 ];
 

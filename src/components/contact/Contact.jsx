@@ -28,7 +28,7 @@ const addressData = [
   {
     icon: faPhone,
     title: "Phone",
-    description: "+63 912 345 6789",
+    description: "+63 985 376 6230",
   },
 ];
 
@@ -44,14 +44,14 @@ const Contact = () => {
     <section className="contact-section" id="contact">
       <div className="contact-aurora" />
 
-      <div className="contact-card mx-4 xl:mx-auto contact-fade">
+      <div className="contact-card mx-4 xl:mx-auto">
         <div className="grid lg:grid-cols-2 gap-0">
 
           {/* â”€â”€ LEFT: info panel â”€â”€ */}
           <div className="p-8 sm:p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-purple-900/30 flex flex-col gap-7">
 
             {/* Badge */}
-            <div className="contact-fade contact-d1">
+            <div>
               <span className="contact-badge">
                 <span className="contact-badge-dot" />
                 Available for Opportunities
@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
 
             {/* Heading */}
-            <div className="contact-fade contact-d1">
+            <div>
               <h2 className="contact-heading">
                 Let's Build<br />Something Great
               </h2>
@@ -72,14 +72,14 @@ const Contact = () => {
             </div>
 
             {/* Contact info cards */}
-            <div className="contact-fade contact-d2 flex flex-col gap-3">
+            <div className="flex flex-col gap-3">
               {addressData.map((item, i) => (
                 <Address item={item} key={i} />
               ))}
             </div>
 
             {/* Social links */}
-            <div className="contact-fade contact-d3">
+            <div>
               <p className="text-xs font-semibold tracking-[0.18em] uppercase text-gray-600 mb-3">Find Me On</p>
               <div className="contact-social-bar">
                 {socials.map((s) => (
@@ -92,7 +92,7 @@ const Contact = () => {
           </div>
 
           {/* â”€â”€ RIGHT: form â”€â”€ */}
-          <div className="p-8 sm:p-10 lg:p-14 contact-fade contact-d2">
+          <div className="p-8 sm:p-10 lg:p-14">
             <h3 className="text-white text-2xl sm:text-3xl font-bold mb-1">Send a Message</h3>
             <p className="contact-form-heading">I typically respond within 24 hours.</p>
             <Form />

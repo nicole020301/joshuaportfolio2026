@@ -21,7 +21,7 @@ const Projects = ({ data }) => {
         <h3 className="project-card-title">{data?.title}</h3>
         <p className="project-card-desc">{data?.description}</p>
         <a href={data?.link} className="project-card-btn">
-          <span>Case Study</span>
+          <span>Click to Explore</span>
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-xs" />
         </a>
       </div>

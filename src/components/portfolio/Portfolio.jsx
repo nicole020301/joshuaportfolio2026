@@ -7,28 +7,28 @@ const projectData = [
   {
     id: 1,
     image: card1,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Internship Training",
+    title: "Aerospace Engineering Internship",
     description:
-      "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
+      "Gained hands-on experience in aerodynamics, structural analysis, and aircraft systems through immersive on-site training with industry professionals.",
     link: "#!",
   },
   {
     id: 2,
     image: card2,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Solidworks Design",
+    title: "3D CAD Modeling & Design",
     description:
-      "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
+      "Designed and modeled aerospace components and assemblies using SolidWorks, applying engineering principles to produce accurate, production-ready 3D models.",
     link: "#!",
   },
   {
     id: 3,
     image: card3,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Commission Work",
+    title: "Maintenance and Other Services",
     description:
-      "Developed a modern admin panel with a focus on usability and seamless navigation for end users.",
+      "Provided technical maintenance and engineering support services on a commission basis, ensuring equipment reliability and compliance with safety standards.",
     link: "#!",
   },
 ];
@@ -59,12 +59,12 @@ const Portfolio = () => {
 
         {/* CTA */}
         <div className="text-center mt-14 md:mt-18">
-          <a
+          {/* <a
             href="#!"
             className="btn btn-primary py-3.5 px-10 text-[15px] font-semibold"
           >
             View All Projects
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

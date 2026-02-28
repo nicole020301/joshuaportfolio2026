@@ -55,6 +55,26 @@ body {
   100% { background-position: 0%   50%; }
 }
 
+/* ── Logo glow pulse (dark mode → purple) ── */
+@keyframes logoGlowPulseDark {
+  0%, 100% { filter: brightness(0) saturate(1) invert(22%) sepia(90%) saturate(2000%) hue-rotate(255deg) brightness(1.1) drop-shadow(0 0 8px #9929fbaa); }
+  50%      { filter: brightness(0) saturate(1) invert(22%) sepia(90%) saturate(2000%) hue-rotate(255deg) brightness(1.3) drop-shadow(0 0 20px #a855f7ee); }
+}
+
+/* ── Logo glow pulse (light mode → purple) ── */
+@keyframes logoGlowPulseLight {
+  0%, 100% { filter: brightness(0) saturate(1) invert(22%) sepia(90%) saturate(2000%) hue-rotate(255deg) brightness(0.85) drop-shadow(0 0 4px #9929fb66); }
+  50%      { filter: brightness(0) saturate(1) invert(22%) sepia(90%) saturate(2000%) hue-rotate(255deg) brightness(1.05) drop-shadow(0 0 12px #9929fbcc); }
+}
+
+.logo-dark {
+  animation: logoGlowPulseDark 2.5s ease-in-out infinite;
+}
+
+.logo-light {
+  animation: logoGlowPulseLight 2.5s ease-in-out infinite;
+}
+
 /* ── Theme Toggle Button ── */
 .theme-toggle-btn {
   display: inline-flex;
