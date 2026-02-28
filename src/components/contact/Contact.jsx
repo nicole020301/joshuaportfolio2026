@@ -64,10 +64,10 @@ const Contact = () => {
                 Let's Build<br />Something Great
               </h2>
               <div className="contact-divider" />
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-sm">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-sm text-justify">
                 As a fresh Aerospace Engineering graduate, I'm actively seeking
                 opportunities in aerodynamics, structural analysis, propulsion,
-                and related fields. Feel free to reach out â€” I'd love to connect.
+                and related fields. Feel free to reach out I'd love to connect.
               </p>
             </div>
 
