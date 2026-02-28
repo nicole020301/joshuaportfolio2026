@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
+
+* {
+  transition-property: all;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function)
+  );
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+@theme {
+  --breakpoint-xxs: 21.25rem; /* COMMENT: 340px */
+  --breakpoint-xs: 23.125rem; /* COMMENT: 363px */
+  --breakpoint-xxl: 82.5rem; /* COMMENT: 1320px */
+  --color-picto-primary: #9929fb;
+  --color-picto-primary-dark: #650fa0;
+  --color-soft-white: #f0f1f3;
+  --color-soft-dark: #87909d;
+}
+
+.btn-primary {
+  @apply bg-picto-primary border-0 text-white hover:scale-[102%] hover:bg-picto-primary-dark transition-all duration-500;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.content {
+  @apply max-xxl:w-full xxl:max-w-[1320px] xxl:mx-auto;
+}
+
+.section-title {
+  @apply md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium;
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
+
+.introduction-profile-background {
+  background: #000000;
+}
+
+/* ── Logo border spin ── */
+@keyframes logoBorderSpin {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+/* ── Theme Toggle Button ── */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  border: 1px solid #7c3aed55;
+  background: #7c3aed11;
+  color: #a855f7;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.25s ease, border-color 0.25s ease,
+              color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.theme-toggle-btn:hover {
+  background: #7c3aed22;
+  border-color: #a855f7;
+  color: #e879f9;
+  transform: rotate(15deg) scale(1.1);
+  box-shadow: 0 0 12px #7c3aed55;
+}
+
+/* ── Light mode: global ── */
+:root[data-theme="light"] body {
+  background: #f5f3ff;
+  color: #111827;
+}
+
+:root[data-theme="light"] .introduction-profile-background {
+  background: #f5f3ff;
+}
+
+:root[data-theme="light"] .theme-toggle-btn {
+  border-color: #7c3aed44;
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+:root[data-theme="light"] .theme-toggle-btn:hover {
+  background: #ddd6fe;
+  border-color: #7c3aed;
+  color: #4c1d95;
+  box-shadow: 0 0 12px #7c3aed33;
+}
+
+.blog-background {
+  background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),
+    radial-gradient(circle at 110% 30%, #c4f5e9b2 5%, transparent 25%);
+}
